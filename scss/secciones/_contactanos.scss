@@ -1,0 +1,23 @@
+.formulario {
+    border-radius: 5px;
+    background-color: $subrayado;
+    padding: 20px;
+    width: 50%;
+}
+
+.enviar{
+    @include enviar(grey, white);
+    &:hover{
+        @include enviar(rgb(230, 230, 230), grey);
+    }
+}
+
+@media (max-width:425px) {
+
+    .formulario {
+        border-radius: 5px;
+        background-color: $subrayado;
+        padding: 20px;
+        width: 80%;
+    }
+}

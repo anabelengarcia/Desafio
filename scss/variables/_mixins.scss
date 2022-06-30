@@ -1,0 +1,4 @@
+@mixin enviar($fondo, $letra) {
+    background-color: $fondo;
+    color: $letra;
+}

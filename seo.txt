@@ -1,0 +1,20 @@
+Cambios SEO
+
+1 - Modificación de tittle en cada una de las páginas:
+index.html Petit Fondeu
+historia.html Historia | Petit Fondeu
+preguntas.html Preguntas Frecuentes | Petit Fondeu
+productos.html Productos | Petit Fondeu
+contactanos.html Contacto | Petit Fondeu
+
+2 - Agregado de keywords, con palabras específicas y relacionadas entre sí:
+index.html "Petit Fondeu, mini donas, chocolateria, chocolate, mesa, dona"
+historia.html "Petit Fondeu, historia, inicio, hoy "
+preguntas.html "Petit Fondeu, pregunta, frecuente, respuesta"
+productos.html "mini, dona, paleta, cakepop, icepop, oreo, choco"
+contactanos.html "Petit Fondeu, contactanos, contacto, presupuesto, evento"
+
+3 - Agregado de description:
+index.html "Mini donas horneadas y chocolatería artesanal, para eventos y fechas especiales."
+
+4 - Agregado, modificación y diseño de h1 en todas las páginas.

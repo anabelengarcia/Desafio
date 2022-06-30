@@ -3,7 +3,13 @@
     padding: 0;
 }
 
+@import './variables/colores.scss';
+@import './variables/extend';
+@import './variables/mixins';
+
 @import './secciones/footer';
+@import './secciones/contactanos';
+@import './secciones/productos';
 
 .tipografia {
     font-family: cursive;
@@ -16,22 +22,20 @@ nav{
     }
 }
 
-.Tit {
+.pinkhover a:hover{
+color: pink;
+}
+
+.h1 {
     font-family: cursive;
-    text-decoration: overline rgb(235, 212, 216);
+    text-decoration: overline $subrayado;
     padding: 15px;
-    font-size: 0.6cm;
+    font-size: 0.7cm;
     color: rgb(63, 62, 62);
 }
 
-p {
-    font-size: 0.5cm;
-    color: rgb(63, 62, 62);
-    background-color: rgba(235, 212, 216, 0.555);
-    border-radius: 5px;
-    padding: 30px;
-    margin: 30px;
-    margin-top: 0;
+.p {
+    @extend %estiloParrafo;
 }
 
 .carousel-inner {
@@ -43,8 +47,48 @@ p {
     }
 }
 
+.h2{
+    font-family: cursive;
+    text-decoration: overline $subrayado;
+    padding: 15px;
+    font-size: 0.6cm;
+    color: rgb(63, 62, 62);
+}
+
+@media (max-width:768px){
+    
+    nav{
+        .flexnav{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 30px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .carousel-inner {
+        max-width: 90%;
+    }
+}
+
 @media (max-width:425px) {
-    .Tit{
+
+    nav{
+        .flexnav{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .h1{
         text-align: center;
         text-decoration: none;
         border: solid 2px rgb(235, 212, 216);
@@ -55,14 +99,28 @@ p {
         padding-right: 0px;
         margin: 15px;
     }
-    .presentacion {
+    p {
         font-size: 0.4cm;
         border-radius: 5px;
         padding: 20px;
         margin: 10px;
         margin-top: 0;
+        text-align: center;
     }
     .carousel-inner {
         max-width: 100%;
     }
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
 }
