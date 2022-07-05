@@ -12,11 +12,12 @@
 @import './secciones/productos';
 @import './secciones/preguntas';
 
-.body{
+.body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 .tipografia {
     font-family: cursive;
 }
