@@ -1,0 +1,14 @@
+
+.accordion {
+    --bs-accordion-active-color: none;
+    --bs-accordion-active-bg: rgba(235, 212, 216, 0.555);
+}
+
+.pago{
+    text-align: center;
+    font-family: cursive;
+    text-decoration: overline $subrayado;
+    padding: 15px;
+    font-size: 0.5cm;
+    color: $texto;
+}

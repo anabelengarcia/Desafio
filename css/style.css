@@ -3,6 +3,7 @@
   padding: 0; }
 
 .p {
+  text-align: justify;
   font-size: 0.5cm;
   color: #3f3e3e;
   background-color: rgba(235, 212, 216, 0.555);
@@ -12,6 +13,7 @@
   margin-top: 0; }
 
 .footer {
+  margin-top: auto;
   background-image: linear-gradient(180deg, #f2f2f2 15%, #ebd4d8 55%); }
 
 .redes {
@@ -56,6 +58,22 @@
     padding-bottom: 5px;
     text-align: center; } }
 
+.contacto {
+  color: #3f3e3e;
+  padding-left: 0; }
+  .contacto li {
+    text-align: center;
+    margin: 1rem;
+    font-family: cursive;
+    display: block; }
+
+.TitForm {
+  font-family: cursive;
+  text-decoration: overline #ebd4d8;
+  padding: 15px;
+  font-size: 0.5cm;
+  color: #3f3e3e; }
+
 .formulario {
   border-radius: 5px;
   background-color: #ebd4d8;
@@ -70,6 +88,10 @@
     color: grey; }
 
 @media (max-width: 425px) {
+  .TitForm {
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient(200deg, #ffdce2 30%, #ffc2cc 55%); }
   .formulario {
     border-radius: 5px;
     background-color: #ebd4d8;
@@ -82,6 +104,23 @@
   padding: 15px;
   font-size: 0.5cm;
   color: #3f3e3e; }
+
+.accordion {
+  --bs-accordion-active-color: none;
+  --bs-accordion-active-bg: rgba(235, 212, 216, 0.555); }
+
+.pago {
+  text-align: center;
+  font-family: cursive;
+  text-decoration: overline #ebd4d8;
+  padding: 15px;
+  font-size: 0.5cm;
+  color: #3f3e3e; }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 .tipografia {
   font-family: cursive; }
@@ -99,6 +138,12 @@ nav .flexnav {
   padding: 15px;
   font-size: 0.7cm;
   color: #3f3e3e; }
+
+.infoUtil {
+  text-align: center;
+  color: #3f3e3e;
+  background-color: pink;
+  font-size: 0.5cm; }
 
 .carousel-inner {
   max-width: 80%; }

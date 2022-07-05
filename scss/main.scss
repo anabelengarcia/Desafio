@@ -10,20 +10,26 @@
 @import './secciones/footer';
 @import './secciones/contactanos';
 @import './secciones/productos';
+@import './secciones/preguntas';
 
+.body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .tipografia {
     font-family: cursive;
 }
 
-nav{
-    .flexnav{
+nav {
+    .flexnav {
         display: flex;
         justify-content: end;
     }
 }
 
-.pinkhover a:hover{
-color: pink;
+.pinkhover a:hover {
+    color: pink;
 }
 
 .h1 {
@@ -31,11 +37,18 @@ color: pink;
     text-decoration: overline $subrayado;
     padding: 15px;
     font-size: 0.7cm;
-    color: rgb(63, 62, 62);
+    color: $texto;
 }
 
 .p {
     @extend %estiloParrafo;
+}
+
+.infoUtil {
+    text-align: center;
+    color: $texto;
+    background-color: pink;
+    font-size: 0.5cm;
 }
 
 .carousel-inner {
@@ -47,18 +60,18 @@ color: pink;
     }
 }
 
-.h2{
+.h2 {
     font-family: cursive;
     text-decoration: overline $subrayado;
     padding: 15px;
     font-size: 0.6cm;
-    color: rgb(63, 62, 62);
+    color: $texto;
 }
 
-@media (max-width:768px){
-    
-    nav{
-        .flexnav{
+@media (max-width:768px) {
+
+    nav {
+        .flexnav {
             display: flex;
             justify-content: center;
         }
@@ -81,14 +94,14 @@ color: pink;
 
 @media (max-width:425px) {
 
-    nav{
-        .flexnav{
+    nav {
+        .flexnav {
             display: flex;
             justify-content: center;
         }
     }
 
-    .h1{
+    .h1 {
         text-align: center;
         text-decoration: none;
         border: solid 2px rgb(235, 212, 216);
@@ -99,6 +112,7 @@ color: pink;
         padding-right: 0px;
         margin: 15px;
     }
+
     p {
         font-size: 0.4cm;
         border-radius: 5px;
@@ -107,6 +121,7 @@ color: pink;
         margin-top: 0;
         text-align: center;
     }
+
     .carousel-inner {
         max-width: 100%;
     }
