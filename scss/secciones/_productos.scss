@@ -1,7 +1,224 @@
-.h3{
+.h3 {
     font-family: cursive;
     text-decoration: overline $subrayado;
     padding: 15px;
     font-size: 0.5cm;
     color: $texto;
+}
+
+.dona {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px;
+    justify-items: center;
+}
+
+.donaimg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.icepop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px;
+    justify-items: center;
+}
+
+.icepopimg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cakepop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px;
+    justify-items: center;
+}
+
+.cakepopimg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.chocotorta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px;
+    justify-items: center;
+}
+
+.chocoimg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.oreob {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px;
+    justify-items: center;
+}
+
+.oreoimg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.lingote {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px;
+    justify-items: center;
+}
+
+.lingoteimg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px;
+    justify-items: center;
+}
+
+.boximg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    .dona {
+        grid-template-rows: 200px;
+    }
+
+    .icepop {
+        grid-template-rows: 200px;
+    }
+
+    .cakepop {
+        grid-template-rows: 200px;
+    }
+
+    .chocotorta {
+        grid-template-rows: 200px;
+    }
+
+    .oreob {
+        grid-template-rows: 200px;
+    }
+
+    .lingote {
+        grid-template-rows: 200px;
+    }
+
+    .box {
+        grid-template-rows: 200px;
+    }
+}
+
+@media (max-width:425px) {
+    .dona {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px;
+        align-items: center;
+    }
+
+    .donaimg {
+        width: 80%;
+        height: 95%;
+    }
+
+    .icepop {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px;
+
+        :nth-child(3) {
+            grid-column-start: span 2;
+        }
+    }
+
+    .icepopimg {
+        height: 95%;
+    }
+
+    .cakepop {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px;
+
+        :nth-child(3) {
+            grid-column-start: span 2;
+        }
+    }
+
+    .cakepopimg {
+        height: 95%;
+    }
+
+    .chocotorta {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px;
+
+        :nth-child(3) {
+            grid-column-start: span 2;
+        }
+    }
+
+    .chocoimg {
+        height: 95%;
+    }
+
+    .oreob {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px;
+
+        :nth-child(3) {
+            grid-column-start: span 2;
+        }
+    }
+
+    .oreoimg {
+        height: 95%;
+    }
+
+    .lingote {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px;
+
+        :nth-child(3) {
+            grid-column-start: span 2;
+        }
+    }
+
+    .lingoteimg {
+        height: 95%;
+    }
+
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px;
+        align-items: center;
+    }
+
+    .boximg {
+        width: 80%;
+        height: 95%;
+    }
 }
